@@ -1,5 +1,5 @@
 import React from "react";
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, useParams } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import './css/ProductDetail.css'
@@ -21,6 +21,10 @@ function Breadcrumb() {
 }
 
 export function ProductDetail() {
+    // Lấy chuỗi params
+    let { url } = useParams();
+ 
+
     return (
         <>  
             <Breadcrumb/>
@@ -127,21 +131,7 @@ export function ProductDetail() {
                         </span>
                     </li>
                     {/* 7 */}
-                    {/* <li class="  " role="presentation">
-
-                                <span class=" nav-link  " id="product-detail-image-07-tab" data-bs-toggle="tab"
-                                    data-bs-target="#product-detail-image-07" type="button" role="tab"
-                                    aria-controls="product-detail-image-07" aria-selected="true">
-
-                                    <div class="images-other">
-                                        <img src="../img/4-acoustic/PCS-318NB-07.png" alt="chi tiết sản phẩm">
-
-                                    </div>
-
-                                </span>
-
-                            </li> */}
-                    {/*  */}
+                   
                     </ul>
                     {/* Các ảnh khác thu nhỏ */}
                 </div>
@@ -193,6 +183,7 @@ export function ProductDetail() {
                     </div>
                 </div> {/* product-detail-buy */}
                 </section> {/* 1 */}
+
                 <section className=" product-description-container   container">
                 {/* 2 Mô tả sản phẩm - product-description-container */}
                 <div className="product-description">

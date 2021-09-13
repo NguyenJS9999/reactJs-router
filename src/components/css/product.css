@@ -483,11 +483,9 @@ header {
 /* End */
 
 
-
-/* Start Danh sách các sản phẩm và phân trang */
 /* Start Danh sách các sản phẩm và phân trang */
 .products-pagination-container {
-  /* border: 1px dotted #e42313; */
+  /* border: 1px solid #e42313; */
   width: 100%;
   padding-bottom: 20px;
   /* padding: 40px 80px; */
@@ -512,12 +510,16 @@ header {
   flex-direction: column;
   justify-content: space-between;
   grid-gap: 40px;
+  margin: 0!important;
 
   position: relative;
   transition: all 0.2s;
 }
 .product:hover {
   border: 0.1px solid rgba(228, 35, 19, 0.3);
+}
+.product span {
+  padding: 8px 12px!important;
 }
 .product a {
   /* border: 1px dotted #E42313; */
@@ -571,9 +573,9 @@ header {
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  /* position: absolute; */
+  /* top: 8px; */
+  /* right: 8px; */
 }
 .like-product:hover {
   font-weight: 600;
