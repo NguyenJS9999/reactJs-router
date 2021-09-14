@@ -25,7 +25,7 @@ function App() {
         <div>
           <Navigation />
 
-          <nav className="container">
+          {/* <nav className="container"> */}
             {/* <div> <Link to="/">Index</Link> </div> */}
             {/* <div> <Link to="/product">Product</Link> </div> */}
             {/* <div> <Link to="/productDetail">ProductDetail</Link> </div> */}
@@ -34,7 +34,9 @@ function App() {
             {/* <Link to="/projectDone"></Link> */}
             {/* <Link to="/blog"></Link> */}
             {/* <Link to="/about"></Link> */}
-          </nav>
+            {/* <Link to="/build-configuration"></Link> */}
+
+          {/* </nav> */}
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
