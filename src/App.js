@@ -11,6 +11,7 @@ import { WishList } from "./components/WishList";
 import { ProjectDone } from "./components/ProjectDone";
 import { Blog } from "./components/Blog";
 import { About } from "./components/About";
+import { BuildConfiguration } from "./components/BuildConfiguration";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -65,6 +66,10 @@ function App() {
 
             <Route path="/about">
               <About />
+            </Route>
+
+            <Route path="/build-configuration">
+              <BuildConfiguration />
             </Route>
 
             <Route path="/">

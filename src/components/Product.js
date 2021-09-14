@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/product.css";
@@ -26,14 +26,14 @@ function Breadcrumb() {
 const PRODUCT_DATA = [
     {
         id: 1,
-        productImage: 'http://127.0.0.1:5500/img/4-acoustic/Subwoofer-PCS-318NB.png',
+        productImage: 'https://nguyenkeo.github.io/MasterAudio/img/4-acoustic/Subwoofer-PCS-318NB.png',
         productBrand: '4 Acoustic',
         productName: 'PCS 318NB',
         productPrice: 65200000,
         slug: '4-Acoustic-PCS-318NB'
     },{
         id: 2,
-        productImage: 'http://127.0.0.1:5500/img/nexo/nexo-ps15.png',
+        productImage: 'https://nguyenkeo.github.io/MasterAudio/img/nexo/nexo-ps15.png',
         productBrand: 'Nexo',
         productName: 'LS 18',
         productPrice: 87715000,
@@ -41,14 +41,14 @@ const PRODUCT_DATA = [
     
     }, {
         id: 3,
-        productImage: 'http://127.0.0.1:5500/img/adamson/adamson-point15.jpg',
+        productImage: 'https://nguyenkeo.github.io/MasterAudio/img/adamson/adamson-point15.jpg',
         productBrand: 'Adamson',
         productName: 'Point 15',
         productPrice: 99111000,
         slug: 'Adamson-Point-15'
     }, {
         id: 4,
-        productImage: 'http://127.0.0.1:5500/img//amate/amate-X218WF.png',
+        productImage: 'https://nguyenkeo.github.io/MasterAudio/img//amate/amate-X218WF.png',
         productBrand: 'Amate',
         productName: 'X218WF',
         productPrice: 179697708,
@@ -59,6 +59,7 @@ const PRODUCT_DATA = [
 ];
 
 export function Product() {
+
   let ProductDetailElement = PRODUCT_DATA.map((item) => (
 
     <div key= { item.id }  className="product">

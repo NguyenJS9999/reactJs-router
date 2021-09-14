@@ -531,9 +531,10 @@ export function Navigation() {
                             <i className="fas fa-home" />&nbsp;Trang chủ
                         </Link>
                        
-                        <Link to="">
-                            <i class="fab fa-product-hunt"></i>&nbsp;Xây dựng cấu hình
+                        <Link to="build-configuration">
+                        <i class="fas fa-tools"></i>&nbsp;Xây dựng cấu hình
                         </Link>
+                        
                         <Link to="/projectDone">
                             <i className="fas fa-users-cog" />&nbsp;Dự án đã hoàn thành
                         </Link>
